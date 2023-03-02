@@ -5,7 +5,14 @@ NetCollector 3.0 es un programa desarrollado en Visual Basic que permite escanea
 
 El programa es fácil de usar y ofrece una interfaz gráfica intuitiva. El escaneo de subred se realiza mediante un escaneo de ping para cada dirección IP en la lista y los resultados se muestran en una lista que incluye información como el nombre de host, la dirección IP y el nombre de dominio. Los usuarios pueden exportar estos datos a una base de datos de Access con un solo clic de un botón, lo que facilita la gestión y el análisis de grandes cantidades de información de red.
 
-Salta a la vista que he adjuntado un .zip con el ejecutable.
+Desarrollado en Visual Studio 2010.
+
+He adjuntado un .zip con el ejecutable.
+
+# Repositorios necesarios dentro del Visual Studio
+![image](https://user-images.githubusercontent.com/64205736/222556230-a43967a5-c828-4470-83fb-63dd17d1a267.png)
+
+
 # Imágenes
 
 ![image](https://user-images.githubusercontent.com/64205736/221389230-a8c38173-1493-413a-9b84-7cd3800afe02.png)

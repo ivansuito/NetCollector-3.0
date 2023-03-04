@@ -18,9 +18,8 @@ Public Class Form_export
     End Sub
     Private Sub btnAccess_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAccess.Click
         ' Conexión a la base de datos
-        Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ivan\Documents\Visual Studio 2010\Projects\NetCollector\BD\exports.accdb;"
+        Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & System.Windows.Forms.Application.StartupPath & "\..\..\..\BD\exports.accdb;"
         Dim connection As System.Data.OleDb.OleDbConnection = New System.Data.OleDb.OleDbConnection(connectionString)
-
 
         ' Abrir la conexión
         connection.Open()
@@ -45,6 +44,7 @@ Public Class Form_export
         ' Mostrar mensaje de éxito
         MessageBox.Show("Los datos se han exportado correctamente a la base de datos.")
     End Sub
+
 
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click

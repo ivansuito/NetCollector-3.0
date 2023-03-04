@@ -8,7 +8,8 @@ Public Class Form_login
 
     Private Sub btnLogin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
         'Establece conexion con la base de datos
-        Dim connStr As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ivan\Documents\Visual Studio 2010\Projects\NetCollector\BD\users.accdb"
+        Dim path As String = Application.StartupPath
+        Dim connStr As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & path & "\..\..\..\BD\users.accdb"
 
 
         'Crear una instancia de OleDbConnection y abrir la conexión

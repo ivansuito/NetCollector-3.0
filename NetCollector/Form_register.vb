@@ -18,7 +18,8 @@ Public Class Form_register
         ' Verificar si los campos no están vacíos
         If Not String.IsNullOrEmpty(txtUser.Text) AndAlso Not String.IsNullOrEmpty(txtPwd.Text) Then
             ' Establecer la cadena de conexión
-            Dim connStr As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ivan\Documents\Visual Studio 2010\Projects\NetCollector\BD\users.accdb"
+            Dim path As String = Application.StartupPath
+            Dim connStr As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & path & "\..\..\..\BD\users.accdb"
 
             ' Comprobar si el usuario ya está registrado
             Using conn As New OleDbConnection(connStr)

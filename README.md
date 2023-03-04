@@ -8,6 +8,9 @@ El programa es fácil de usar y ofrece una interfaz gráfica intuitiva. El escan
 Desarrollado en Visual Studio 2010.
 
 He adjuntado un .zip con el ejecutable.
+# Como usar, instalar: 
+
+Clona el repositorio en tu dispositivo y asegúrate de tener Visual Studio 2010 y de instalar todos los repositorios necesarios dentro de él.
 
 # Repositorios necesarios dentro del Visual Studio
 ![image](https://user-images.githubusercontent.com/64205736/222556230-a43967a5-c828-4470-83fb-63dd17d1a267.png)

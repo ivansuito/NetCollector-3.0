@@ -19,3 +19,4 @@ C:\Users\Ivan\Documents\Visual Studio 2010\Projects\NetCollector\NetCollector\ob
 C:\Users\Ivan\Documents\Visual Studio 2010\Projects\NetCollector\NetCollector\obj\x86\Release\NetCollector.exe
 C:\Users\Ivan\Documents\Visual Studio 2010\Projects\NetCollector\NetCollector\obj\x86\Release\NetCollector.xml
 C:\Users\Ivan\Documents\Visual Studio 2010\Projects\NetCollector\NetCollector\obj\x86\Release\NetCollector.pdb
+C:\Users\Ivan\Documents\Visual Studio 2010\Projects\NetCollector\NetCollector\obj\x86\Release\WindowsApplication1.Form_BD.resources

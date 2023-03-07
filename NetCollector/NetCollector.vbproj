@@ -102,6 +102,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form_BD.Designer.vb">
+      <DependentUpon>Form_BD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_BD.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form_register.Designer.vb">
       <DependentUpon>Form_register.vb</DependentUpon>
     </Compile>
@@ -144,6 +150,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form_BD.resx">
+      <DependentUpon>Form_BD.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_register.resx">
       <DependentUpon>Form_register.vb</DependentUpon>
     </EmbeddedResource>

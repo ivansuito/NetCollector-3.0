@@ -12,7 +12,7 @@ Public Class Form_tool
         Dim subnet As String = txtIP.Text
         Dim baseIP As String = subnet.Substring(0, subnet.LastIndexOf(".") + 1)
         Dim addresses As New List(Of String)
-        For i As Integer = 2 To 254
+        For i As Integer = 2 To 100
             addresses.Add(baseIP & i.ToString())
         Next
 
@@ -28,7 +28,7 @@ Public Class Form_tool
             options.DontFragment = True
             Dim data As String = "ping"
             Dim buffer As Byte() = System.Text.Encoding.ASCII.GetBytes(data)
-            Dim timeout As Integer = 120
+            Dim timeout As Integer = 254
             Dim reply As PingReply = pingSender.Send(address, timeout, buffer, options)
             If reply.Status = IPStatus.Success Then
                 Try

@@ -1,6 +1,8 @@
 ﻿Imports System.Data.OleDb
 Imports System.IO
 Imports Microsoft.Office.Interop.Excel
+Imports System.Net
+Imports System.Net.Mail
 Public Class Form_export
 
     Private Sub btnTxt_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTxt.Click
@@ -90,5 +92,47 @@ Public Class Form_export
 
     Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
 
+    End Sub
+
+    Private Sub btnEnviar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEnviar.Click
+        Try
+            ' Configuramos el cliente SMTP
+            Dim smtp As New SmtpClient()
+            smtp.Host = "smtp.gmail.com"
+            smtp.Port = 587
+            smtp.EnableSsl = True
+            smtp.Credentials = New NetworkCredential("eldelopez22@gmail.com", "mewkmksbvicfinty")
+
+            ' Configuramos el mensaje de correo electrónico
+            Dim mensaje As New MailMessage()
+            mensaje.From = New MailAddress("eldelopez22@gmail.com")
+            mensaje.To.Add(txtCorreo.Text)
+            mensaje.Subject = "Contenido del ListBox"
+            mensaje.Body = String.Join(Environment.NewLine, Form_tool.ListBox1.Items.Cast(Of String).ToArray())
+
+            ' Enviamos el mensaje de correo electrónico
+            smtp.Send(mensaje)
+
+            MessageBox.Show("El contenido del ListBox se ha enviado correctamente por correo electrónico.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Catch ex As Exception
+            MessageBox.Show("Error al enviar el correo electrónico: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    Private Sub btnBD_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBD.Click
+        
+        Me.Hide()
+        Form_BD.Show()
+        Dim path As String = System.Windows.Forms.Application.StartupPath
+        Dim connStr As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & path & "\..\..\..\BD\exports.accdb"
+
+
+        Dim conn As New System.Data.OleDb.OleDbConnection(connStr)
+
+        Dim sql As String = "SELECT * FROM Data"
+        Dim adapter As New OleDbDataAdapter(sql, conn)
+        Dim ds As New DataSet()
+        adapter.Fill(ds, "Data")
+        Form_BD.DataGridView1.DataSource = ds.Tables("Data")
     End Sub
 End Class

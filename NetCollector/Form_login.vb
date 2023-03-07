@@ -31,6 +31,8 @@ Public Class Form_login
                 Else
                     Form_tool.Show()
                     Me.Hide()
+                    Form_tool.Label6.Text = txtUser.Text
+                    txtPwd.Text = ""
                 End If
             End Using
 

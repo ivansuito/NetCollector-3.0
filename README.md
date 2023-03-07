@@ -16,8 +16,10 @@ Clona el repositorio en tu dispositivo y asegúrate de tener Visual Studio 2010 
 
 
 # Imágenes
+![image](https://user-images.githubusercontent.com/64205736/223571735-45ac3f92-3417-4021-9209-0378192ff722.png)
+![image](https://user-images.githubusercontent.com/64205736/223571761-5f4c6bc7-98b6-47b0-b439-dcb072a6ed3c.png)
+![image](https://user-images.githubusercontent.com/64205736/223571807-ffe4eea2-bb2f-49ae-ab30-b8abb9660318.png)
+![image](https://user-images.githubusercontent.com/64205736/223571837-6a17a4dc-0e16-4d88-9aa0-68bae7e92d17.png)
+![image](https://user-images.githubusercontent.com/64205736/223571924-04759453-dc55-4a5a-92f2-41a0f8202755.png)
 
-![image](https://user-images.githubusercontent.com/64205736/221389230-a8c38173-1493-413a-9b84-7cd3800afe02.png)
-![image](https://user-images.githubusercontent.com/64205736/221389253-1b3c629e-3dcb-425c-98f7-00298ef8ecc7.png)
-![image](https://user-images.githubusercontent.com/64205736/221389256-86003291-c283-49ce-922b-6873952c7867.png)
-![image](https://user-images.githubusercontent.com/64205736/221389259-38712b7d-eba9-49b4-8b1b-858ac5e3b9ea.png)
+

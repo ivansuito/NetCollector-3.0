@@ -101,11 +101,11 @@ Public Class Form_export
             smtp.Host = "smtp.gmail.com"
             smtp.Port = 587
             smtp.EnableSsl = True
-            smtp.Credentials = New NetworkCredential("eldelopez22@gmail.com", "")
+            smtp.Credentials = New NetworkCredential("", "")
 
             ' Configuramos el mensaje de correo electrónico
             Dim mensaje As New MailMessage()
-            mensaje.From = New MailAddress("eldelopez22@gmail.com")
+            mensaje.From = New MailAddress("")
             mensaje.To.Add(txtCorreo.Text)
             mensaje.Subject = "Contenido del ListBox"
             mensaje.Body = String.Join(Environment.NewLine, Form_tool.ListBox1.Items.Cast(Of String).ToArray())

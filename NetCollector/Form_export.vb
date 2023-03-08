@@ -101,7 +101,7 @@ Public Class Form_export
             smtp.Host = "smtp.gmail.com"
             smtp.Port = 587
             smtp.EnableSsl = True
-            smtp.Credentials = New NetworkCredential("eldelopez22@gmail.com", "mewkmksbvicfinty")
+            smtp.Credentials = New NetworkCredential("eldelopez22@gmail.com", "")
 
             ' Configuramos el mensaje de correo electrónico
             Dim mensaje As New MailMessage()
